@@ -5,11 +5,7 @@
 ################################################################################
 
 # If enabled, choose the development version hash.
-ifeq ($(BR2_PACKAGE_WPEWEBKIT_BUILD_DEVELOPMENT_VERSION),y)
-WPEWEBKIT_VERSION_VALUE = d87dd8efb1ac316d270d8bc2076c800106f9507f
-else
-WPEWEBKIT_VERSION_VALUE = 037206e53711588a0ba9b1f71e0fb36c78e56b5d
-endif
+WPEWEBKIT_VERSION_VALUE = b892d8edeb816e6e04efaf97f74cda4c06acde99
 
 WPEWEBKIT_VERSION = $(WPEWEBKIT_VERSION_VALUE)
 WPEWEBKIT_SITE = $(call github,WebPlatformForEmbedded,WPEWebKit,$(WPEWEBKIT_VERSION))
